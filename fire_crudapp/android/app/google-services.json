@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314629551148",
+    "project_id": "firecrud-970bd",
+    "storage_bucket": "firecrud-970bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314629551148:android:dd3a7e755867d55410cd89",
+        "android_client_info": {
+          "package_name": "com.example.fire_crudapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314629551148-dc44jjds4aakbfaeouf7kcjom2ba8kj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdnQPcMYukXjmSRUacZCPo5Q7C4j9Yg5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314629551148-dc44jjds4aakbfaeouf7kcjom2ba8kj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
