@@ -1,3 +1,4 @@
+import 'package:fire_crudapp/ui/Loginwithphone.dart';
 import 'package:fire_crudapp/ui/PostScreen.dart';
 import 'package:fire_crudapp/ui/SignupScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -141,7 +142,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: MediaQuery.of(context).size.height * 0.2,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginWithPhonenumber(),
+                      ));
+                },
                 child: Container(
                   height: MediaQuery.of(context).size.height * 0.05,
                   width: MediaQuery.of(context).size.width * 0.8,
@@ -149,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.blue,
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Login with Phone",
                       style: TextStyle(
