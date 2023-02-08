@@ -57,6 +57,7 @@ class _VerifyCodeState extends State<VerifyCode> {
                         MaterialPageRoute(
                             builder: ((context) => PostScreen())));
                   } catch (e) {
+                    
                     Utils().toastMessage(e.toString());
                   }
                 }),
