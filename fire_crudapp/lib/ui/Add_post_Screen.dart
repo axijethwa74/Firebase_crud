@@ -1,3 +1,4 @@
+import 'package:fire_crudapp/ui/PostScreen.dart';
 import 'package:fire_crudapp/utils/utils.dart';
 import 'package:fire_crudapp/widgets/RoundButton.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -97,6 +98,11 @@ class _AddPostState extends State<AddPost> {
                       Loading = false;
                     });
                     Utils().toastMessage("Post Added Successfully");
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PostScreen(),
+                        ));
                   }).onError((error, stackTrace) {
                     setState(() {
                       Loading = false;

@@ -34,28 +34,21 @@ class PostScreen extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
-          children: [
-            Expanded(
-              child: FirebaseAnimatedList(
-                  query: ref,
-                  defaultChild: Center(
-                      child: CircularProgressIndicator(
-                          strokeWidth: 3, backgroundColor: Colors.blue)),
-                  itemBuilder: ((context, snapshot, animation, index) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(snapshot.child("Name").value.toString()),
-                        ],
-                      ),
-                    );
-                  })),
+        body: Expanded(
+          child: FirebaseAnimatedList(
+            query: ref,
+            defaultChild: CircularProgressIndicator(
+              strokeWidth: 2,
+              color: Colors.blue,
             ),
-          ],
+            itemBuilder: (context, snapshot, animation, index) {
+              return Column(
+                children: [
+                  Text(snapshot.child('Name').value.toString()),
+                ],
+              );
+            },
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
